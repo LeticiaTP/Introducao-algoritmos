@@ -1,0 +1,21 @@
+algoritmo "média ponderada"
+var
+nota1, nota2, nota3 : real
+p1, p2, p3 : inteiro
+media : real
+
+inicio
+p1 <- 2
+p2 <- 3
+p3 <- 5
+Escreval ("Esse programa lê as notas dos alunos e calcula a média ponderada.")
+Escreva ("Digite a primeira nota:")
+Leia (nota1)
+Escreva ("Digite a segunda nota:")
+Leia (nota2)
+Escreva ("Digite a terceira nota:")
+Leia (nota3)
+media <- (nota1*p1+nota2*p2+nota3*p3)/(p1+p2+p3)
+Escreva ("A média é", media)
+
+fimalgoritmo

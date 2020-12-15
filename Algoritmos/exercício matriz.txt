@@ -1,0 +1,47 @@
+A partir de uma matriz de elementos contendo nome, nome da mãe e cidade de nascimento, elabore uma solução com ênfase na lógica que mantenha a matriz na forma original mas permita o acesso rápido aos dados por qualquer um dos dados: ( Nome, Nome da Mãe ou por Cidade ).
+
+
+
+programa
+{
+funcao inicio()
+{
+inteiro opcao
+cadeia matrizNOMES[4][3] = {{"Ana", "Ester", "Camaragibe"}, {"Sara", "Rute",
+"Recife"}, {"Rebeca", "Raquel", "Abreu e Lima"}, {"","",""}}
+cadeia vetNOME[4], vetNOMEMAE[4], vetNOMECITY[4]
+escreva ("Digite seu nome: ")
+leia (matrizNOMES[3][0])
+escreva ("Digite o nome da sua mãe: ")
+leia (matrizNOMES[3][1])
+escreva ("Digite o nome da cidade em que você nasceu: ")
+leia (matrizNOMES[3][2])
+escreva ("Se você deseja ver os nomes, digite 1. Se deseja ver nome das mães,
+digite 2. Se deseja ver cidade de nascimento, digite 3: ")
+leia (opcao)
+se (opcao == 1){
+vetNOME[0] = matrizNOMES[0][0]
+vetNOME[1] = matrizNOMES[1][0]
+vetNOME[2] = matrizNOMES[2][0]
+vetNOME[3] = matrizNOMES[3][0]
+escreva ("Nomes: ", vetNOME[0], "; ", vetNOME[1], "; ", vetNOME[2], "; ",
+vetNOME[3], ".")
+}
+se (opcao == 2){
+vetNOMEMAE[0] = matrizNOMES[0][1]
+vetNOMEMAE[1] = matrizNOMES[1][1]
+vetNOMEMAE[2] = matrizNOMES[2][1]
+vetNOMEMAE[3] = matrizNOMES[3][1]
+ escreva ("Nome das mães: ", vetNOMEMAE[0], "; ", vetNOMEMAE[1], "; ",
+vetNOMEMAE[2], "; ", vetNOMEMAE[3], ".")
+}
+se (opcao == 3){
+vetNOMECITY[0] = matrizNOMES[0][2]
+vetNOMECITY[1] = matrizNOMES[1][2]
+vetNOMECITY[2] = matrizNOMES[2][2]
+vetNOMECITY[3] = matrizNOMES[3][2]
+ escreva ("Nome das cidades: ", vetNOMECITY[0], "; ", vetNOMECITY[1], "; ",
+vetNOMECITY[2], "; ", vetNOMECITY[3], ".")
+}
+}
+}

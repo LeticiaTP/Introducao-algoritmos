@@ -1,0 +1,33 @@
+algoritmo "Média de números"
+var
+numero, x, qtd, par, impar, qtd_par, qtd_impar : inteiro
+
+inicio
+Escreva ("Informe a quantidade de números:")
+Leia (qtd)
+
+Para x de 1 ate qtd faca
+Escreva ("Digite um número")
+Leia (numero)
+
+se numero <> 0 entao
+
+se ((numero mod 2)=0) entao
+par <- par+numero
+qtd_par <- qtd_par+1
+
+senao
+impar <- impar+numero
+qtd_impar <- qtd_impar+1
+
+se x=qtd entao
+par <- (par/qtd_par)
+impar <- (impar/qtd_impar)
+
+Escreval ("Quantidade par: ", qtd_par, "Média par: ", par)
+Escreval ("Quantidade ímpar: ", qtd_impar, "Média ímpar: ", impar)
+fimse
+fimse
+fimse
+fimpara
+fimalgoritmo

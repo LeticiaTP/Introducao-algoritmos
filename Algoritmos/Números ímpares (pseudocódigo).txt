@@ -1,0 +1,20 @@
+//Programa que mostra números ímpares de 100 a 200
+programa
+{
+	funcao inicio()
+	{
+		inteiro numero, num_final, resto
+		numero = 100
+		num_final = 200
+		resto = 0
+		enquanto ( numero < num_final )
+		{
+			resto = numero % 2
+			se ( resto != 0 )
+			{
+				escreva (numero)
+			}
+			numero=numero+1
+		}
+	}
+}
